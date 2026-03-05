@@ -1,0 +1,16 @@
+.text-layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.05); /* Muy tenue */
+  user-select: none;
+}
+
+.bg-title {
+  font-size: 10rem;
+  font-weight: 900;
+  letter-spacing: -5px;
+  margin: 0;
+}

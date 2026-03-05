@@ -1,0 +1,27 @@
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: all 0.3s ease; /* Transición suave */
+  cursor: pointer;
+  width: 300px;
+}
+
+/* Efecto al pasar el mouse */
+.login-container:hover {
+  transform: translateY(-10px) scale(1.05); /* Sobresale */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Resplandor */
+  border-color: #00f2fe;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}

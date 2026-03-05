@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-login-box',
+  imports: [],
+  templateUrl: './login-box.html',
+  styleUrl: './login-box.scss',
+})
+export class LoginBox {
+
+}
