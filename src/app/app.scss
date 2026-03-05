@@ -1,0 +1,23 @@
+.app-viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Evita que aparezcan barras de scroll */
+}
+
+.login-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  pointer-events: none;    /* Deja que el mouse pase a través del contenedor... */
+}
+
+/* ... pero queremos que el login SÍ reciba clics */
+app-login-box {
+  pointer-events: all; 
+}

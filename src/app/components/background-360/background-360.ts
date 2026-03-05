@@ -6,7 +6,7 @@ import * as THREE from 'three';
   template: '<div #container class="viewer-360"></div>',
   styles: ['.viewer-360 { width: 100vw; height: 100vh; position: fixed; z-index: -1; }']
 })
-export class Background360Component implements AfterViewInit {
+export class Background360 implements AfterViewInit {
   @ViewChild('container') container!: ElementRef;
 
   ngAfterViewInit() {

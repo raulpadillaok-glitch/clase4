@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './login-box.scss',
 })
 export class LoginBox {
+translateX: any;
+translateY: any;
 
 }
