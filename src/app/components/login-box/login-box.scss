@@ -31,3 +31,15 @@
   background: #fff;
   color: #000;
 }
+.bg-title {
+  font-size: 8vw;
+  font-weight: 900;
+  color: rgba(0, 229, 255, 0.1);
+  text-transform: uppercase;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}

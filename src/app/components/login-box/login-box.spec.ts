@@ -1,23 +1,20 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, HostListener } from '@angular/core';
 
-import { LoginBox } from './login-box';
+@Component({
+  selector: 'app-login-box',
+  templateUrl: './login-box.html',
+  styleUrls: ['./login-box.css']
+})
+export class LoginBoxComponent {
+  translateX = 0;
+  translateY = 0;
 
-describe('LoginBox', () => {
-  let component: LoginBox;
-  let fixture: ComponentFixture<LoginBox>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [LoginBox]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(LoginBox);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  @HostListener('document:mousemove', ['$event'])
+  onMouseMove(e: MouseEvent) {
+    // Calcula un pequeño movimiento basado en la posición del mouse
+    this.translateX = (e.clientX - window.innerWidth / 2) / 50;
+    this.translateY = (e.clientY - window.innerHeight / 2) / 50;
+    
+  }
+  
+}
