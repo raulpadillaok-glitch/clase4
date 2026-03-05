@@ -22,7 +22,7 @@ export class Background360Component implements AfterViewInit {
 
     const loader = new THREE.TextureLoader();
     // Reemplaza con una URL de imagen equirectangular
-    const texture = loader.load('assets/tu-imagen-360.jpg'); 
+    const texture = loader.load('https://threejs.org/examples/textures/2294472375_b4a848a633_o.jpg'); 
     const material = new THREE.MeshBasicMaterial({ map: texture });
     const sphere = new THREE.Mesh(geometry, material);
     
