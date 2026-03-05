@@ -25,3 +25,12 @@ input {
   border: 1px solid white;
   color: white;
 }
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.canvas-360 { /* o el nombre que uses en el html */
+  width: 100%;
+  height: 100%;
+}
